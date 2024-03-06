@@ -9,7 +9,8 @@ import support from './support.svg'
 import shieldTick from './shield-tick.svg'
 import star from './star.svg'
 import truckFast from './truck-fast.svg'
-import twitter from './twitter.svg'
+import twitter from './x.svg'
+import closeMenu from './closeMenu.svg'
 
 export {
     arrowRight,
@@ -23,5 +24,6 @@ export {
     shieldTick,
     star,
     truckFast,
-    twitter
+    twitter,
+    closeMenu
 }

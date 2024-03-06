@@ -56,3 +56,20 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 }
+.menu-container{
+  position: absolute;
+  background-color: #24262b;
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 100;
+  margin-top: 10px;
+}
+.menu-container.open{
+  opacity: 0.95;
+  transform: translateX(0);
+}
+.menu-container.closed{
+  opacity: 0;
+  transform: translateX(-100%);
+}
