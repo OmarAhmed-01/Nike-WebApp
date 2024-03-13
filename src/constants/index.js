@@ -1,5 +1,7 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import {    bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, 
+            thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { Air_One, Air_Mid, Air_Max, Dunk_Low, Gamma_Force, Jordan_Mid, Invincible_3, Revolution_6, Killshot_2 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -91,17 +93,20 @@ export const reviews = [
 
 
 export const footerLinks = [
-    {
-        title: "Products",
-        links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
-        ],
-    },
+    // {
+    //     title: "Products",
+    //     links: [
+    //         { name: "Air Max", link: "/" },
+    //         { name: "AirForce One", link: "/" },
+    //         { name: "AirForce High", link: "/" },
+    //         { name: "Dunk Low", link: "/" },
+    //         { name: "Gamma Force", link: "/" },
+    //         { name: "Jordan Mid", link: "/" },
+    //         { name: "Invincible 3", link: "/" },
+    //         { name: "Revolution 5", link: "/" },
+    //         { name: "Killshot 2", link: "/" },
+    //     ],
+    // },
     {
         title: "Help",
         links: [
@@ -119,6 +124,96 @@ export const footerLinks = [
             { name: "+92554862354", link: "tel:+92554862354" },
         ],
     },
+];
+
+export const Models = [
+    {
+        title: "Products",
+        links: [
+            {
+                id: "1",
+                name: "Air Max",
+                color: ["Black", "Blue & Grey", "White", "Hot Pink"],
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Air_Max,
+                link: "/airmax",
+                price: "130"
+            },
+            {
+                id: "2",    
+                name: "AirForce One",
+                color: "White",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Air_One,
+                link: "/airforceone",
+                price: "90"
+            },
+            {     
+                id: "3",
+                name: "AirForce High",
+                color: "Red",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Air_Mid,
+                link: "/airforcehigh",
+                price: "130"
+            },
+            {
+                id: "4",
+                name: "Dunk Lows",
+                color: "White & Black",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Dunk_Low,
+                link: "/dunklow",
+                price: "115"
+            },
+            {
+                id: "5",
+                name: "Gamma Force",
+                color: "White & Blue",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Gamma_Force,
+                link: "/gammaforce",
+                price: "73"
+            },
+            {
+                id: "6",
+                name: "Air Jordan 1 Mid",
+                color: "White & Blue",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Jordan_Mid,
+                link: "/jordanmid",
+                price: "125"
+            },
+            {
+                id: "7",
+                name: "Invincible 3",
+                color: "Grey & Blue",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Invincible_3,
+                link: "/invincible3",
+                price: "130"
+            },
+            {
+                id: "8",
+                name: "Revolution 6",
+                color: "white & Black",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Revolution_6,
+                link: "/revolution6",
+                price: "70"
+            },
+            {
+                id: "9",
+                name: "Killshot 2",
+                color: "Orange",
+                sizes: [39, 40, 41, 42, 43, 44, 45, 46, 47],
+                imgURL: Killshot_2,
+                link: "/killshot2",
+                price: "90"
+            },
+        ],
+    },
+    
 ];
 
 export const socialMedia = [

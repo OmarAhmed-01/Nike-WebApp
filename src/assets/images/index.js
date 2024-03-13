@@ -21,6 +21,18 @@ import thumbnailShoe1 from './thumbnail-shoe1.svg'
 import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
 
+
+import Air_One from "./Air_One.jpg";
+import Air_Mid from "./Air_Mid.jpg";
+import Air_Max from "./Air_Max.png";
+import Dunk_Low from "./Dunk_Low.jpg";
+import Gamma_Force from "./Gamma_Force.jpg";
+import Jordan_Mid from "./Jordan_Mid.jpg";
+import Invincible_3 from "./Invincible_3.png";
+import Revolution_5 from "./Revolution_5.png";
+import Killshot_2 from "./Killshot_2.png";
+import Revolution_6 from "./Revolution_6.png"
+
 export {
     bigShoe1,
     bigShoe2,
@@ -42,5 +54,16 @@ export {
     thumbnailBackground,
     thumbnailShoe1,
     thumbnailShoe2,
-    thumbnailShoe3
+    thumbnailShoe3,
+
+    Air_One,
+    Air_Max,
+    Air_Mid,
+    Dunk_Low,
+    Gamma_Force,
+    Jordan_Mid,
+    Invincible_3,
+    Revolution_5,
+    Killshot_2,
+    Revolution_6
 }
