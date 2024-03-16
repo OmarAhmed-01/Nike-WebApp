@@ -10,7 +10,8 @@ const ShoeCard = () => {
     return <div>Loading...</div>; // Or handle the case where Models is undefined
   }
 
-  const ShoeDetails = Models.flatMap(model => model.links).find(product => product.link.slice(1) === productId);
+  const ShoeDetails = Models.flatMap(model => model.links).find(product => product.id === productId);
+  console.log("ShoeDetails:", ShoeDetails);
 
   if (!ShoeDetails) {
     return <div>Product not found</div>; // Or handle the case where ShoeDetails is undefined

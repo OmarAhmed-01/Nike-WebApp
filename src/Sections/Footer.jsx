@@ -1,12 +1,16 @@
+//assets
 import { copyrightSign } from "../assets/icons"
 import { footerLogo } from "../assets/images"
+
+//imports
 import { footerLinks, socialMedia, Models } from "../constants"
 import { React, useState} from 'react'
-import AirMax from "../components/AirMax"
+import { Link } from 'react-router-dom'
+
 
 export const Footer = () => {
 
-  const [modalOpen, setModalOpen] = useState(false);
+  const [open, setModalOpen] = useState(false);
 
   const openModal = () => {
     setModalOpen(true);
@@ -48,7 +52,8 @@ export const Footer = () => {
                   {
                     section.links.map((link) => (
                       <li key={link.name} className=" text-white-400 mt-3 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer">
-                        <a className=" cursor-pointer" href={link.link}>{link.name}</a>
+                          <Link to={`products/${link.id}`} className=" cursor-pointer">{link.name}</Link>
+                        {/* <a className=" cursor-pointer" href={link.link}>{link.name}</a> */}
                       </li>
                     ))
                   }
