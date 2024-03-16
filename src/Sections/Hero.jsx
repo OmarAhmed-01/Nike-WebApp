@@ -3,6 +3,7 @@ import { bigShoe1 } from "../assets/images"
 import Button from "../components/Button"
 import ShoeCard from "../components/ShoeCard"
 import { shoes, statistics } from "../constants"
+import { Shoes } from "../components/Shoes"
 
 import { useState } from "react"
 
@@ -40,7 +41,7 @@ const Hero = () => {
         <div className=" flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[17%] max-sm:px-6">
           {shoes.map((shoe, index) => (
             <div key={shoe}>
-              <ShoeCard index={index} imgURL={shoe} changeBigShoeImage={(shoe)=>{setBigShoeImg(shoe)}} bigShoeImg={bigShoeImg}/>
+              <Shoes index={index} imgURL={shoe} changeBigShoeImage={(shoe)=>{setBigShoeImg(shoe)}} bigShoeImg={bigShoeImg}/>
             </div>
           ))}
         </div>

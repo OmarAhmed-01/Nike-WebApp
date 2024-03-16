@@ -93,20 +93,6 @@ export const reviews = [
 
 
 export const footerLinks = [
-    // {
-    //     title: "Products",
-    //     links: [
-    //         { name: "Air Max", link: "/" },
-    //         { name: "AirForce One", link: "/" },
-    //         { name: "AirForce High", link: "/" },
-    //         { name: "Dunk Low", link: "/" },
-    //         { name: "Gamma Force", link: "/" },
-    //         { name: "Jordan Mid", link: "/" },
-    //         { name: "Invincible 3", link: "/" },
-    //         { name: "Revolution 5", link: "/" },
-    //         { name: "Killshot 2", link: "/" },
-    //     ],
-    // },
     {
         title: "Help",
         links: [
