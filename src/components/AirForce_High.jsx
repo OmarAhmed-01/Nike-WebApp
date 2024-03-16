@@ -2,20 +2,20 @@ import { Models } from "../constants";
 
 const AirForce_High = () => {
   if (!Models) {
-    return <div>Loading...</div>; // Or handle the case where Models is undefined
+    return <div>Loading...</div>; //Or handle the case where Models is undefined
   }
 
-  const AF_High_Details = Models[0].links.find(product => product.name === 'AirForce High');
+  const AF_High_Details = Models[0].links.find(product => product.name === 'AirForce High'); //removed
 
   if (!AF_High_Details) {
-    return <div>Product not found</div>; // Or handle the case where AF_High_Details is undefined
+    return <div>Product not found</div>;  //Or handle the case where AF_High_Details is undefined
   }
    
   return (
     <div className="flex justify-center items-center min-h-screen max-lg:h-full">
       <div className="container w-full h-[80vh] flex flex-row justify-center -ml-[20px] max-lg:justify-center max-lg:items-center max-lg:flex max-lg:flex-col">
         <div className="w-[50%] flex justify-center items-center overflow-hidden rounded-[20px] max-lg:w-[80%] max-lg:mt-[300px] max-lg:rounded-[20px] max-lg:overflow-visible">
-          <img className=" max-lg:rounded-[20px]" src={AF_High_Details.imgURL} width={950} height={950} alt={AF_High_Details.name} />
+          <img className=" max-lg:rounded-[20px]" src={AF_High_Details.imgURL} width={950} height={950} alt={AF_High_Details.name} /> {/*pass props {AF_High_Details.imgURL} */}
         </div>
         <div className="w-[30%] flex flex-col justify-start max-lg:w-[80%]">
           <h1 className="font-montserrat m-5 text-4xl w-[80%] text-start max-lg:text-3xl">{AF_High_Details.name}</h1>
