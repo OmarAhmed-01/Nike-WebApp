@@ -42,10 +42,8 @@ export const Layout = () => {
             <Footer/>
           </section>
         </main>
-        <section>
-          {
-            isBagOpen && <Cart closeBag={toggleBag}/>
-          }
+        <section className=' w-full overflow-x-hidden'>
+          <Cart closeBag={toggleBag} isBagOpen={isBagOpen}/>
         </section>
       </>
   )
