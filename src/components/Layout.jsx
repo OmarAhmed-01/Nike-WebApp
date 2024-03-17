@@ -42,7 +42,11 @@ export const Layout = () => {
             <Footer/>
           </section>
         </main>
-        {isBagOpen && <Cart closeBag={toggleBag} />}
+        <section>
+          {
+            isBagOpen && <Cart closeBag={toggleBag}/>
+          }
+        </section>
       </>
   )
 }
