@@ -11,6 +11,9 @@ import star from './star.svg'
 import truckFast from './truck-fast.svg'
 import twitter from './x.svg'
 import closeMenu from './closeMenu.svg'
+import redX from './redX.svg'
+import greyX from './greyX.svg'
+import shoppingBag from './shoppingBag.svg'
 
 export {
     arrowRight,
@@ -25,5 +28,8 @@ export {
     star,
     truckFast,
     twitter,
-    closeMenu
+    closeMenu,
+    redX,
+    greyX,
+    shoppingBag
 }

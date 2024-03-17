@@ -1,13 +1,22 @@
-import React from 'react'
+import { React, useState } from 'react'
+
 //pages
 import Nav from './Nav'
 import { Hero, PopularProducts, SuperQuality, Services, SpecialOffers, CustomerReviews, Subscribe, Footer } from '../Sections'
+import { Cart } from './Cart'
 
 export const Layout = () => {
+
+  const [isBagOpen, setBagOpen] = useState(false);
+
+  const toggleBag = () => {
+    setBagOpen(!isBagOpen);
+  };
+
   return (
     <>
         <main className="relative">
-          <Nav/>
+          <Nav openBag={toggleBag}/>
           <section className="xl:padding-l wide:padding-r padding-b">
             <Hero/>
           </section>
@@ -33,6 +42,7 @@ export const Layout = () => {
             <Footer/>
           </section>
         </main>
+        {isBagOpen && <Cart closeBag={toggleBag} />}
       </>
   )
 }

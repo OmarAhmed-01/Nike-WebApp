@@ -1,9 +1,9 @@
 import { headerLogo } from '../assets/images';
-import { closeMenu, hamburger } from '../assets/icons';
+import { closeMenu, hamburger, shoppingBag } from '../assets/icons';
 import { navLinks } from '../constants';
 import { useRef, useState } from 'react';
 
-const Nav = () => {
+const Nav = ({ openBag }) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
@@ -41,14 +41,20 @@ const Nav = () => {
                         navLinks.map((item) => (
                             
                             <li key={item.label} className=' list-none inline-block mr-4'>
-                                    <a href={item.href} className=' font-montserrat leading-normal text-white hover:text-slate-gray'>
-                                        {item.label}
-                                    </a>
-                                </li> 
+                                <a href={item.href} className=' font-montserrat leading-normal text-white hover:text-slate-gray'>
+                                    {item.label}
+                                </a>
+                            </li> 
                             
                         ))
                     }
                 </ul>
+            </div>
+            <div className='flex items-center'>
+                <div className=' relative'>
+                    <img src={shoppingBag} alt="Shopping Bag" width={30} height={30} className=' mr-[10px] cursor-pointer' onClick={openBag}/>
+                    <p className='absolute top-0 right-0 border rounded-full bg-red-700 text-white w-6 h-6 flex items-center justify-center text-xs pointer-events-none'>0</p>
+                </div>
             </div>
         </nav>
     </header>
