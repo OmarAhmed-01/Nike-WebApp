@@ -4,10 +4,10 @@ import {    bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, sh
 import { Air_One, Air_Mid, Air_Max, Dunk_Low, Gamma_Force, Jordan_Mid, Invincible_3, Revolution_6, Killshot_2 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#products", label: "Products" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#contact-us", label: "Contact Us" },
+    { href: "/#home", label: "Home" },
+    { href: "/#products", label: "Products" },
+    { href: "/#about-us", label: "About Us" },
+    { href: "/#contact-us", label: "Contact Us" },
 ];
 
 export const shoes = [
