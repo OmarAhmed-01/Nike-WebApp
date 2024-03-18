@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { greyX } from '../assets/icons'
 
-export const Cart = ({ closeBag, isBagOpen }) => {
+export const Cart = ({ closeBag, isBagOpen,  }) => {
 
   return (
     <section className={` max-container flex justify-end absolute top-0 right-0 z-[200] ${isBagOpen ? "w-[400px] opacity-1": "w-0 opacity-0"} transition-all duration-300 `}>

@@ -1,7 +1,8 @@
 import { headerLogo } from '../assets/images';
 import { closeMenu, hamburger, shoppingBag } from '../assets/icons';
 import { navLinks } from '../constants';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState, useContext } from 'react';
+import { counterContext } from './ShoeCard'
 
 const Nav = ({ openBag }) => {
 
@@ -11,6 +12,12 @@ const Nav = ({ openBag }) => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const counter = useContext(counterContext);
+
+    useEffect(() => {
+        console.log(counter);
+    });
 
   return (
     <header className=' padding-x py-8 absolute z-10 w-full'>
@@ -33,7 +40,6 @@ const Nav = ({ openBag }) => {
                 <button onClick={toggleMenu} >
                    {isOpen ? <img src={closeMenu} width={25} height={25}/> : <img src={hamburger} width={25} height={25}/>} 
                 </button>
-                {/* Next part to make the hamburger menu display the list items */}
             </div>
             <div ref={menuRef} className={`lg:flex lg:flex-row lg:items-center lg:w-auto w-full p-5 right-0 top-full menu-container ${isOpen ? "open" : "closed"}`}>
                 <ul className=' flex justify-evenly w-full'>
@@ -53,7 +59,7 @@ const Nav = ({ openBag }) => {
             <div className='flex items-center'>
                 <div className=' relative'>
                     <img src={shoppingBag} alt="Shopping Bag" width={30} height={30} className=' mr-[10px] cursor-pointer' onClick={openBag}/>
-                    <p className='absolute top-0 right-0 border rounded-full bg-red-700 text-white w-6 h-6 flex items-center justify-center text-xs pointer-events-none'>0</p>
+                    <p className='absolute top-0 right-0 border rounded-full bg-red-700 text-white w-6 h-6 flex items-center justify-center text-xs pointer-events-none'>{counter}</p>
                 </div>
             </div>
         </nav>
